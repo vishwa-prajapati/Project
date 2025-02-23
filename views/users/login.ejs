@@ -1,0 +1,27 @@
+<%layout("/layouts/boiler")%>
+
+<div class="row"> 
+    <div class="col-6 offset-3" >
+<h1> Login on Wanderlust</h1>
+        <form action="/login" method="post" class="needs-validation"  novalidate>
+            <div class="mb-3">
+                <label for="username" class="form-label"> Username</label>
+                <input  placeholder="enter name" 
+                name="username" type="text" id="username"
+                 class="form-control" required> </input> 
+               
+                
+            </div> 
+
+
+            <div class="mb-3">
+                <label for="password" class="form-label"> Password</label>
+                <input  placeholder="enter password" 
+                name="password" type="password" id="password"
+                 class="form-control" required> </input> 
+                 <div class="invalid-feedback">Enter password </div>
+            </div> 
+            <button class="btn btn-success"> login</button>
+        </form>
+        </div>
+        </div>

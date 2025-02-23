@@ -1,0 +1,59 @@
+<%layout("/layouts/boiler")%>
+
+    <body>
+        <div class="row">
+            <div class="col-8 offset-2">
+
+
+                <h1> create new listing</h1>
+                <form method="post" action="/listing" class="needs-validation" enctype="multipart/form-data" novalidate>
+                    <div class="mb-3">
+                        <label for="title" class="form-label"> Title</label>
+                        <input placeholder="enter title" name="listing[title]" type="text" class="form-control"
+                            required> </input>
+                        <div class="invalid-feedback"> Please enter valid title </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label"> Description</label>
+                        <textarea placeholder="enter title" name="listing[description]" type="text" class="form-control"
+                            required> </textarea>
+                        <div class="invalid-feedback"> Please enter valid description </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label"> Price</label>
+                        <input placeholder="enter price" name="listing[price]" class="form-control" required> </input>
+                        <div class="invalid-feedback"> Please choose valid Price </div>
+                    </div>
+                    <!-- <div class="mb-3">
+                        <label for="Image" class="form-label"> Image</label>
+                        <input placeholder="enter image" name="listing[image]" type="text" class="form-control"
+                            required> </input>
+                        <div class="invalid-feedback"> Please choose valid Image </div>
+                    </div> -->
+
+                    <div class="mb-3">
+                        <label for="Image" class="form-label">Upload Image</label>
+                        <input  name="listing[image]" type="file" class="form-control"
+                            required> </input>
+                        <div class="invalid-feedback"> Please choose valid Image </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="location" class="form-label"> Location</label>
+                        <input placeholder="enter location" name="listing[location]" type="text" class="form-control"
+                            required></input>
+                        <div class="invalid-feedback"> Please choose valid Location </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="country" class="form-label"> country</label>
+                        <input placeholder="enter country" name="listing[country]" type="text" class="form-control"
+                            required></input>
+                        <div class="invalid-feedback"> Please choose valid Country </div>
+                    </div>
+
+                    <button class="btn btn-dark">Add</button>
+
+                </form>
+            </div>
+        </div>
+    </body>
